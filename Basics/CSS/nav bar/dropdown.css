@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container2 {
+  margin: 8px;
+  padding: 4px;
+}
+
+.container2 h2 {
+  margin-top: 0;
+  width: 100%;
+}
+
+.list1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  background-color: rgb(80, 127, 255);
+  padding: 12px;
+  border-radius: 12px;
+}
+.dropdown a {
+  display: none;
+}
+.list1:after.dropdown a {
+  display: block;
+}
+
+.list1 a {
+  text-decoration: none;
+  color: white;
+}
