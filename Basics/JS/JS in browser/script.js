@@ -43,3 +43,12 @@ document.querySelector('.bikeButton').
     let bikePartList = document.getElementById('bikePartList');
     bikePartList.lastElementChild.remove();
   })
+
+//example 6
+//By clicking on a list item ,it shoulod throw alert
+document.getElementById('vehicleList').
+  addEventListener("click", function (event) {
+    if (event.target && event.target.matches('.diffVehicle')) {
+      alert(` Congrats you have selected ${event.target.textContent}`);
+    }
+  })
