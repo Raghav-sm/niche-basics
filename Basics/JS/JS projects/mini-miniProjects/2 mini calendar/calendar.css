@@ -1,0 +1,41 @@
+body{
+  margin: 0;
+  font-family: cursive;
+  background-color: slateblue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-container{
+  background-color: white;
+  width: 300px;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 5px 8px ;
+}
+
+.myMonth{
+  background-color: orangered;
+  margin: 0;
+  padding: 8px;
+  font-size: 30px;
+  color: white;
+}
+.myDay{
+  font-size: large;
+  opacity: 40%;
+}
+.myDate{
+  margin: 0px;
+  padding:8px;
+  font-size: 120px;
+  font-weight: 500;
+}
+
+.myYear{
+  font-size: x-large;
+  opacity: 40%;
+}
