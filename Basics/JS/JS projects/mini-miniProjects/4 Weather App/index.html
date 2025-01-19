@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./weather.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+
+      <div class="logo">
+        <img src="./icone-meteo-violet.png" alt="logo" height="50px" />
+      </div>
+
+      <form>
+        <input id="inputCity" type="text" placeholder="Enter your city" />
+        <input id="btn" type="submit" value="Get Weather" />
+      </form>
+
+      <div class="temp">22°C</div>
+      <div class="description">Feels Windy</div>
+
+      <div id="details">
+        <div>Feels like 22°C</div>
+        <div>Humidity: 40%</div>
+        <div>Wind Speed: 5m/s</div>
+      </div>
+    </div>
+    <script src="./weather.js"></script>
+  </body>
+</html>
