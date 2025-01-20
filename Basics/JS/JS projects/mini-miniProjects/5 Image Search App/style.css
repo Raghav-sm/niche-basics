@@ -1,0 +1,105 @@
+body {
+  margin: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#search-Id {
+  padding: 8px 12px;
+  font-size: medium;
+  outline: none;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#search-btn {
+  border: none;
+  margin-left: 12px;
+  background-color: coral;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 12px;
+  font-size: medium;
+  transition: all 0.1s ease-out;
+}
+
+#search-btn:hover {
+  background-color: white;
+  color: coral;
+  cursor: pointer;
+  border: 1px solid coral;
+}
+
+.search-results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-result {
+  width: 30%;
+  margin-bottom: 60px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.search-result:hover img {
+  transform: scale(1.05);
+}
+
+.search-result img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+.search-result a {
+  text-decoration: none;
+  color: slategrey;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.search-result:hover a {
+  background-color: slategray;
+  color: white;
+}
+
+#show-more-btn {
+  padding: 12px 20px;
+  border: none;
+  font-size: small;
+  background-color: #2293ef;
+  border-radius: 12px;
+  color: white;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  transform: all 0.2s ease;
+}
+
+#show-more-btn:hover {
+  background-color: white;
+  color: #2293ef;
+  border: 1px solid #2293ef;
+}
