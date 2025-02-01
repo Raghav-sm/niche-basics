@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Karchu</h1>
+      <form id="expense-form">
+        <input type="text" id="expense-name" placeholder="Enter the name" />
+        <input type="number" id="expense-amnt" placeholder="Enter the amnt" />
+        <button id="addExpenseBtn">Add Expense</button>
+      </form>
+      <h3>Expenses</h3>
+      <ul id="expense-list">
+        <li>fafa <button class="del-btn">Delete</button></li>
+        <!-- We will add list elements here -->
+      </ul>
+      <div id="total">
+        <h3>Total : <span>$0.00</span></h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+body {
+  background-color: burlywood;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 10px;
+  color: saddlebrown;
+}
+
+.container {
+  background-color: rgba(241, 210, 170, 0.8);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Form Layout */
+#expense-form {
+  display: flex;
+  flex-wrap: nowrap; /* Allows elements to move below when needed */
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/* Inputs Styling */
+#expense-name,
+#expense-amnt {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  flex: 1; /* Makes inputs flexible */
+  min-width: 0px; /* Prevents inputs from being too small */
+  outline: none;
+}
+
+#addExpenseBtn {
+  background-color: saddlebrown;
+  color: beige;
+  border: none;
+  height: 40px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  min-width: 120px;
+}
+#addExpenseBtn:hover {
+  background-color: saddlebrown;
+  transform: scale(1.05);
+}
+#expense-name:focus,
+#expense-amnt:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#expense-name:hover,
+#expense-amnt:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 300px) {
+  #expense-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  #expense-name,
+  #expense-amnt,
+  #addExpenseBtn {
+    width: 100%;
+  }
+}
+
+#expense-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+#expense-list li {
+  background: rgba(255, 255, 255, 0.5);
+  margin: 5px 0;
+  padding: 12px;
+  border-radius: 15px;
+  font-size: 14px;
+  color: saddlebrown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#expense-list li:hover {
+  transform: scale(1.02); /* Slight scale-up */
+  border-radius: 15px; /* Increase roundness */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
+}
+
+.del-btn {
+  background-color: saddlebrown;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.del-btn:hover {
+  background-color: rgba(162, 77, 17, 0.8);
+  transform: scale(1.05);
+}
+
+.del-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Total Expense Section */
+#total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: end;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
+/* Adding smooth transition for buttons and list items */
